@@ -25,3 +25,11 @@ textarea {
     left: 100%;
     margin-top: -1px;
 }
+
+/* Footer positioning */
+footer{
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+}
