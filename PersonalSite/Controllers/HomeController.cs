@@ -14,7 +14,7 @@ namespace PersonalSite.Controllers
             return View();
         }
 
-        public ViewResult Source()
+        public ViewResult Bio()
         {
             return View();
         }

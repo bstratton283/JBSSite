@@ -165,7 +165,7 @@
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Shared\FileMenu.cshtml" />
-    <Content Include="Views\Home\Source.cshtml" />
+    <Content Include="Views\Home\Bio.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
