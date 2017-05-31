@@ -1,12 +1,17 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿html { 
+    height: 100%;
 }
 
-/* Set padding to keep content from hitting the edges */
+body {
+    padding-top: 50px;
+    height: 100%;
+}
+
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    height: 100%;
+    background: #333;
+    border-left: 5px solid #aaa;
+    border-right: 5px solid #aaa;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -16,20 +21,46 @@ textarea {
     max-width: 280px;
 }
 
+/* Navbar */
 /* For positioning the multilevel menu on the navbar */
-.dropdown-submenu{
+.dropdown-submenu {
     position: relative;
 }
-.dropdown-submenu .dropdown-menu{
+.dropdown-submenu .dropdown-menu {
     top: 0;
     left: 100%;
     margin-top: -1px;
 }
+nav, footer {
+    background: #aaa;
+}
+.my-navbar {
+    border-width: 0;
+}
+.my-navbar a {
+    color: black;
+}
+.my-navbar .dropdown-menu {
+    background-color: #eee;
+    border-radius: 3px;
+}
+/* left off here*/
+.my-navbar .navbar-nav li:hover {
+    background-color: red;
+}
 
-/* Footer positioning */
-footer{
+/* Prettyprint styles */
+/* Turn on text editor line numbers for every line */
+li.L0,li.L1,li.L2,li.L3, li.L4, li.L5,li.L6,li.L7,li.L8, li.L9 { list-style-type: decimal !important; }
+/* Alternate line shading */
+li.L1, li.L3, li.L5, li.L7, li.L9 { background: #333; }
+pre.prettyprint {
+    border: 0px;
+}
+
+footer {
     position: fixed;
-    height: 50px;
+    height: 30px;
     bottom: 0;
     width: 100%;
 }
