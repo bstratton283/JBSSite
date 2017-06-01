@@ -121,7 +121,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\favicon.ico" />
+    <Content Include="Content\Images\favicon.ico" />
+    <Content Include="Content\Images\window-close.png" />
+    <Content Include="Content\Images\window-minimize.png" />
+    <Content Include="Content\Images\window-restore.png" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -133,7 +136,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\BradStrattonResume.pdf" />
+    <Content Include="Content\Files\BradStrattonResume.pdf" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -165,7 +168,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
-    <Content Include="Views\Shared\FileMenu.cshtml" />
     <Content Include="Views\Home\Bio.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <None Include="Web.Debug.config">

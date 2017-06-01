@@ -68,13 +68,14 @@ nav, footer {
 .my-navbar .dropdown-menu .dead-link {
     color: black;
 }
-.my-navbar #window-controls {
-    width: 25px;
-    height: 25px;
-    background-color: red;
-}
 .my-navbar .navbar-toggle, my-navbar .navbar-toggle, .icon-bar {
     border: 1px solid #464646;
+}
+.my-navbar #window-controls {
+    float: right;
+    width: 80px;
+    height: 25px;
+    margin: 5px 5px 0 0;
 }
 
 /* Prettyprint styles */
