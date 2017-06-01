@@ -38,15 +38,43 @@ nav, footer {
     border-width: 0;
 }
 .my-navbar a {
-    color: black;
+    color: #464646;
+}
+.dropdown-menu > li > a {
+    color: #464646;
 }
 .my-navbar .dropdown-menu {
     background-color: #eee;
     border-radius: 3px;
 }
-/* left off here*/
-.my-navbar .navbar-nav li:hover {
+.my-navbar .navbar-nav > li a:hover, .my-navbar .navbar-nav > li.open > a {
+    background-color: #ddd;
+}
+.my-navbar .dropdown-menu {
+    padding: 0;
+}
+.my-navbar .dropdown-menu .fake-link, .my-navbar .dropdown-menu a {
+    display: block; padding: 6px 20px;
+}
+.my-navbar .dropdown-menu .divider { 
+    margin: 4px 0; background-color: #ccc;
+}
+.my-navbar .dropdown-menu .fake-link:hover {
+    background-color: #ddd;
+}
+.my-navbar .dead-link {
+    color: grey; cursor: default;
+}
+.my-navbar .dropdown-menu .dead-link {
+    color: black;
+}
+.my-navbar #window-controls {
+    width: 25px;
+    height: 25px;
     background-color: red;
+}
+.my-navbar .navbar-toggle, my-navbar .navbar-toggle, .icon-bar {
+    border: 1px solid #464646;
 }
 
 /* Prettyprint styles */
