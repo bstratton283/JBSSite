@@ -7,46 +7,37 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-namespace Test
-{
-    public interface IHirable
-    {
-        string FirstName { get; set; }
-        string LastName { get; set; }
-        string Title { get; set; }
-        List<string> Skills { get; set; }
-        List<string> Adjectives { get; set; }
-        string Hobby { get; set; }
-        string DescribeYourself();
-    }
-    public class Candidate : IHirable
-    {
+using Recruiting;
+
+namespace Homepage {
+    public class Candidate : IHirable {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Title { get; set; }
         public List<string> Skills { get; set; }
         public List<string> Adjectives { get; set; }
         public string Hobby { get; set; }
-        public string DescribeYourself()
-        {
+        public string DescribeYourself() {
             StringBuilder mySB = new StringBuilder();
             mySB.AppendFormat("{0} {1} is a {2} {3} and all around great guy. Proficient in technologies such as ", FirstName, LastName, Adjectives.ElementAt(0), Title);
             foreach (string skill in Skills){
                 if (Skills.IndexOf(skill) < (Skills.Count - 1)) {
-                    mySB.AppendFormat("{0}{1}, ", skill, Skills.IndexOf(skill));
+                    mySB.AppendFormat("{0}, ", skill);
                 } else {
                     mySB.AppendFormat("and {0},", skill);
                 }
             }
-            mySB.AppendFormat(" {0} is obviously very {1} and a valuable asset to any team. As a person, {2} is ", FirstName, Adjectives.ElementAt(1), FirstName);
+            mySB.AppendFormat(" {0} is obviously very {1} and would be a valuable asset to any team. As a person, {2} is ", FirstName, Adjectives.ElementAt(1), FirstName);
             foreach(string adjective in Adjectives){
-                if (Adjectives.IndexOf(adjective) < (Adjectives.Count - 1)){
-                    mySB.AppendFormat("{0}{1}, ", adjective, Adjectives.IndexOf(adjective));
+                if (Adjectives.IndexOf(adjective) <= 1){
+                    continue;
+                } else if (Adjectives.IndexOf(adjective) < (Adjectives.Count - 1)) {
+                    mySB.AppendFormat("{0}, ", adjective);
                 } else {
-                    mySB.AppendFormat("and {0},", adjective);
+                    mySB.AppendFormat("and lastly but most importantly of all.. {0}.", adjective);
                 }
             }
+            mySB.AppendFormat(" In his free time, {0} enjoys {1}.", FirstName, Hobby);
             return mySB.ToString();
         }
         public static void Main(){
@@ -59,10 +50,11 @@ namespace Test
                 Hobby = "writing about himself in the third person through source code"
             };
             Console.WriteLine(jbs.DescribeYourself());
-            Console.WriteLine("");
-            Console.Write("Press enter to continue...");
-            Console.ReadLine();
         }
     }
 }
+/* Output:
+ * Brad Stratton is a hardworking Software Developer and all around great guy. Proficient in technologies such as C#, Java, MySQL, HTML/CSS, and jQuery, Brad is obviously very
+ * smart and would be a valuable asset to any team. As a person, Brad is fun, resourceful, positive, honest, flexible, focused, thoughtful, genuine, and lastly but most
+ * importantly of all.. humble. In his free time, Brad enjoys writing about himself in the third person through source code. */
 </pre>

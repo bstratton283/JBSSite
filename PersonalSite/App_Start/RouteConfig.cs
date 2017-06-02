@@ -19,6 +19,13 @@ namespace PersonalSite
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
+            /*routes.MapRoute(
+                name: "404error",
+                url: "",
+                new { controller = "Error", action = "PageNotFound" },
+                httpStatusCode: "404"
+            );*/
+
         }
     }
 }
