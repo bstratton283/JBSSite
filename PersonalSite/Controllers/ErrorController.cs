@@ -8,13 +8,29 @@ namespace PersonalSite.Controllers
 {
     public class ErrorController : Controller
     {
-        // GET: Error
-        /*public ActionResult Http404(string url) {
-            Response.StatusCode = (int)HttpStatusCodeResult.NotFound;
-            var model = new 
+        private string errorCode;
 
-            return View();
-        }*/
+        public ErrorController(string err){
+            errorCode = err;
+        }
+        // GET: Error
+        public ViewResult NotFound() {
+            ViewBag.Title = errorCode;
+            ViewBag.ErrorCode = errorCode;
+            string viewToReturn;
+            switch (errorCode){
+                case "404":
+                    viewToReturn = "404Error";
+                    break;
+                case "500":
+                    viewToReturn = "500Error";
+                    break;
+                default:
+                    viewToReturn = "DefaultError";
+                    break;
+            }
+            return View(viewToReturn);
+        }
 
     }
 }

@@ -175,7 +175,10 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Home\Bio.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
-    <Content Include="Views\Error\404.cshtml" />
+    <Content Include="Views\Error\404Error.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Error\DefaultError.cshtml" />
+    <Content Include="Views\Error\500Error.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

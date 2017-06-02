@@ -18,5 +18,10 @@ namespace PersonalSite.Controllers
         {
             return View();
         }
+
+        public ViewResult Test()
+        {
+            return View();
+        }
     }
 }
