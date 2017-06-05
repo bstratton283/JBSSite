@@ -7,9 +7,4 @@
         e.preventDefault();
     });
 
-    //Calculate the footer stats
-    $("#line-count").html(
-        $(".body-content > .prettyprint > ol.linenums > li").length
-    );
-
 })
