@@ -11,7 +11,7 @@ namespace PersonalSite.Controllers
         // GET: Home
         public ViewResult Index()
         {
-            ViewBag.Title = "Home.txt";
+            ViewBag.Title = "Home.cs";
             return View();
         }
 

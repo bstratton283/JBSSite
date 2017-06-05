@@ -9,7 +9,8 @@ body {
 
 .body-content {
     height: 100%;
-    background: #333;
+    /*background: #333;*/
+    background: #002B36;
     border-left: 5px solid #aaa;
     border-right: 5px solid #aaa;
 }
@@ -82,9 +83,18 @@ nav, footer {
 /* Turn on text editor line numbers for every line */
 li.L0,li.L1,li.L2,li.L3, li.L4, li.L5,li.L6,li.L7,li.L8, li.L9 { list-style-type: decimal !important; }
 /* Alternate line shading */
-li.L1, li.L3, li.L5, li.L7, li.L9 { background: #333; }
+/*li.L1, li.L3, li.L5, li.L7, li.L9 {
+    background: #333;
+}*/
+.prettyprint li {background: #002b36;}
+/* Set text color for non-code pages */
+.prettyprint.prettyprint-text-doc span {
+    color: #E5E5E5 !important;
+}
 pre.prettyprint {
     border: 0px;
+    border-radius: 0px;
+    background: #002b36;
 }
 
 footer {
