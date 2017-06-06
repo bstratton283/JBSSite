@@ -23,11 +23,20 @@
 
     <script src="~/Scripts/jquery-3.1.1.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
-    <script src="~/Scripts/myScript.js"></script>
+    <script src="~/Scripts/pageHelper.js"></script>
+    <script src="~/Scripts/googleAnalytics.js"></script>
     <script>
-    (function (helper) {
-        helper.bindPageEvents();
-    })(pageHelper);
+        //UI Events
+        (function (helper) {
+            helper.bindPageEvents();
+        })(pageHelper);
+
+        //Google Analytics
+        (function (helper) {
+            helper.init();
+            helper.trackPage();
+            helper.trackResumeClicks();
+        })(googleAnalytics);
     </script>
 
 </body>

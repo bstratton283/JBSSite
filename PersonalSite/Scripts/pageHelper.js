@@ -1,4 +1,6 @@
 ﻿var pageHelper = (function () {
+    "use strict";
+
     var module = {
         bindPageEvents: function () {
 
