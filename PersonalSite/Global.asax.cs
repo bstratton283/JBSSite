@@ -18,7 +18,7 @@ namespace PersonalSite
 
         protected void Application_EndRequest()
         {
-            if (Context.Response.StatusCode == 404)
+            if (Context.Response.StatusCode != 200)
             {
                 var myRoute = new RouteData();
                 myRoute.DataTokens["area"] = "AreaName";

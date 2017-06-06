@@ -1,10 +1,15 @@
-﻿$(function () {
+﻿var pageHelper = (function () {
+    var module = {
+        bindPageEvents: function () {
 
-    //Open navbar's 2nd level dropdown
-    $('.dropdown-submenu a.dropdown-submenu-triggerbutton').click(function (e) {
-        $(this).next('ul').toggle();
-        e.stopPropagation();
-        e.preventDefault();
-    });
+            //Open navbar's 2nd level dropdown
+            $(".dropdown-submenu a.dropdown-submenu-triggerbutton").on("click", function (e) {
+                $(this).next("ul").toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        }
 
-})
+    }
+    return module;
+})();
