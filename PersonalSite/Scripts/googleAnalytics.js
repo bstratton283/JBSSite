@@ -18,7 +18,7 @@
             $('#resume-link').on('click', function () {
                 ga('send', {
                     hitType: 'event',
-                    eventCategry: 'Clicks',
+                    eventCategory: 'Clicks',
                     eventAction: 'clicked',
                     eventLabel: 'Resume'
                 });
