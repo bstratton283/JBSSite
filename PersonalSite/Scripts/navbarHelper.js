@@ -10,6 +10,7 @@
                 e.stopPropagation();
                 e.preventDefault();
             });
+
         }
 
     }

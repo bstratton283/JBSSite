@@ -22,7 +22,7 @@ namespace PersonalSite
             //Custom
             bundles.Add(new ScriptBundle("~/Scripts/custom").Include(
                 "~/Scripts/navbarHelper.js",
-                "~/Scripts/googleAnalyics.js"
+                "~/Scripts/googleAnalytics.js"
             ));
             bundles.Add(new StyleBundle("~/Styles/custom").Include("~/Content/Site.css"));
 
