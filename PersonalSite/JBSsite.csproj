@@ -146,6 +146,7 @@
     <Content Include="Content\Images\window-close.png" />
     <Content Include="Content\Images\window-minimize.png" />
     <Content Include="Content\Images\window-restore.png" />
+    <Content Include="Content\prettify_desert.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -166,8 +167,8 @@
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\pageHelper.js" />
+    <Content Include="Scripts\navbarHelper.js" />
+    <Content Include="Scripts\run_prettify.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\Navbar.cshtml" />
   </ItemGroup>

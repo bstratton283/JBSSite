@@ -13,7 +13,6 @@
         trackPage: function () {
             ga('create', 'UA-100616458-1', 'auto');
             ga('send', 'pageview');
-            alert("watching you");
         },
         trackResumeClicks: function () {
             $('#resume-link').on('click', function () {
@@ -23,7 +22,6 @@
                     eventAction: 'clicked',
                     eventLabel: 'Resume'
                 });
-                alert("sending resume click to google analytics");
             });
         }
     }

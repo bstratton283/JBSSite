@@ -1,4 +1,4 @@
-﻿var pageHelper = (function () {
+﻿var navbarHelper = (function () {
     "use strict";
 
     var module = {

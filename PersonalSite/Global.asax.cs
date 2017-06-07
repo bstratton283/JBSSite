@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web.Optimization;
 using PersonalSite.Controllers;
 
 namespace PersonalSite
@@ -14,6 +15,7 @@ namespace PersonalSite
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
         protected void Application_EndRequest()
@@ -30,5 +32,6 @@ namespace PersonalSite
                 controller.Execute(new RequestContext(new HttpContextWrapper(Context), myRoute));
             }
         }
+
     }
 }
